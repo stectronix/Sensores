@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="cmbRange">
+        <item>1 Segundo</item>
+        <item>10 Segundos</item>
+        <item>30 Segundos</item>
+        <item>1 Minuto</item>
+        <item>5 Minutos</item>
+        <item>15 Minutos</item>
+        <item>30 Minutos</item>
+        <item>1 Hora</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:background="@color/colorBlack"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- Resto de la interfaz de usuario -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/tab_bottom"/>
+
+    <!--Tab bottom-->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/tab_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        app:itemBackground="@color/colorBlack"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        android:elevation="8dp"
+        app:menu="@menu/bottom_menu"/>
+
+</RelativeLayout>

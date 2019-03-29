@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgBluetooth"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/bluetooth"
+                android:tint="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/lblBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgBluetooth"
+                android:gravity="center"
+                android:text="@string/tabBluetooth"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:id="@+id/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/lblBluetooth"
+                android:gravity="center"
+                android:background="@color/colorWhite"
+                android:text="@string/lblListDevices"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:elevation="8dp"/>
+
+            <ListView
+                android:id="@+id/lstDevices"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/lblTitle"
+                android:background="@color/colorWhite"
+                android:elevation="8dp"
+                tools:ignore="NestedScrolling"/>
+
+            <LinearLayout
+                android:id="@+id/viewButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/lstDevices"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnScan"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="@string/btnTxtScan" />
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnDisconnect"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:text="@string/btnTxtDisconnect" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

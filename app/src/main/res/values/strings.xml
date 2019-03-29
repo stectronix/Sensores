@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sensores</string>
+    <string name="tabBluetooth">Vincular</string>
+    <string name="tabMonitor">Monitorear</string>
+    <string name="btnTxtScan">Escanear</string>
+    <string name="btnTxtDisconnect">Desconectar</string>
+    <string name="btnTxtPlay">Iniciar</string>
+    <string name="btnTxtGenerate">Generar CSV</string>
+    <string name="btnTxtImport">Importar CSV</string>
+    <string name="lblListDevices">Lista de dispositivos</string>
+</resources>
